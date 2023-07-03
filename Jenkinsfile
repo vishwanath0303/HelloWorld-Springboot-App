@@ -3,12 +3,13 @@ pipeline{
     stages{
         stage('Git clone'){
             steps{
-                sh 'git clone https://github.com/shazforiot/HelloWorld-Springboot-App.git'
+                sh 'git clone https://github.com/vishwanath0303/HelloWorld-Springboot-App.git'
             }
         }
         
         stage('maven build'){
             steps{
+                cd ${Workspace}\HelloWorld-Springboot-App
                 sh 'mvn package'
             }
         }
