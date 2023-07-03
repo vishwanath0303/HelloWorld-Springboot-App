@@ -9,8 +9,9 @@ pipeline{
         
         stage('maven build'){
             steps{
-                sh 'cd ${Workspace}\HelloWorld-Springboot-App'
-                sh 'mvn package'
+                sh 'pwd'
+                // sh 'cd ${Workspace}\HelloWorld-Springboot-App'
+                // sh 'mvn package'
             }
         }
         stage('Create Dockerimage'){
