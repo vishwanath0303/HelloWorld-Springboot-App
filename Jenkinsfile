@@ -10,7 +10,7 @@ pipeline{
         stage('maven build'){
             steps{
                 dir('HelloWorld-Springboot-App')
-                dir
+                
                 // sh 'cd ${Workspace}\HelloWorld-Springboot-App'
                 // sh 'mvn package'
             }
