@@ -12,7 +12,7 @@ pipeline{
                 sh 'HelloWorld-Springboot-App'
                 
                 // sh 'cd ${Workspace}\HelloWorld-Springboot-App'
-                // sh 'mvn package'
+                 sh 'mvn package'
             }
         }
         stage('Create Dockerimage'){
