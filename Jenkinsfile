@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Git clone'){
             steps{
-                sh 'git clone https://github.com/vishwanath0303/HelloWorld-Springboot-App.git'
+                bat "dir"
             }
         }
         
